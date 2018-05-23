@@ -1,6 +1,6 @@
 <footer>
-        <div id="footer-container">
-                <a href="#">联系我们❤</a>
+        <div class="footer-container">
+                <a href="#">联系我们❤bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</a>
         </div>
 
 </footer>

@@ -1,6 +1,6 @@
 <nav id="nav-header">
     <div id="logo">
-        <a id="logo-title" href="/">kindlePush</a>
+        <a  href="/">kindlePush</a>
     </div>
     <div id="nav-header-right">
         <ul id="nav-header-right-menu">

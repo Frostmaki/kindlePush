@@ -12,6 +12,11 @@
 */
 body {
   font-family: Hiragino Sans GB, "Hiragino Sans GB", Helvetica, "Microsoft YaHei", Arial,sans-serif;
+  background: #f5f8fa;
+  color: #636b6f;
+  font-size:14px;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -22,6 +27,7 @@ body {
 #nav-header{
   background: white;
   height:50px;
+  box-shadow: 10px 10px 5px #888888;
   a:link{
     color: #777;
   }
@@ -29,18 +35,23 @@ body {
 
 #logo{
   float:left;
-  display: inline-block;
+
   margin-left: 50px;
   height: 50px;
 }
-#logo-title{
-  display: block;
+#logo a{
   font-size: 18px ;
-  margin-top: 10px;
-  height: 80%;
-  text-decoration: none;
-  vertical-align: center;
+  display: inline-block;
+  height: 50px;
+  width: 120px;
   text-align: center;
+  text-decoration: none;
+  line-height: 50px;
+
+}
+
+a:hover,#logo a:active{
+  background-color:darkgrey;
 }
 
 #nav-header-right{
@@ -55,6 +66,7 @@ body {
 
 #nav-header-right-menu li{
   float: left;
+
 }
 
 #nav-header-right-menu li a{
@@ -62,6 +74,10 @@ body {
   padding:8px 50px;
   margin-top: 6px;
   text-decoration: none;
+  a:hover,a:active
+  {
+    background:#cc0000;
+  }
 
 }
 
@@ -71,12 +87,31 @@ body {
 footer{
   height:60px;
   background: #636b6f;
+  width: 100%;
 
-  #footer-container{
-    line-height: 30px;
+
+  .footer-container{
+    height:60px;
+    display:table-cell;
+    vertical-align: middle;
     a{
       color:#c1c1c1;
       margin-left: 60px;
+      text-decoration: none;
     }
+
   }
+
+}
+
+/**/
+#app-container{
+  height:100%;
+  margin-bottom: 60px;
+}
+#app-footer{
+  position: absolute;
+  display: block;
+  width: 100%;
+  bottom: 0;
 }

@@ -7,10 +7,14 @@
     </head>
 
     <body>
-        @include('layouts._header')
+
         <div id="app-container">
+            @include('layouts._header')
             @include('layouts._message')
             @yield('content')
+
+        </div>
+        <div id="app-footer">
             @include('layouts._footer')
         </div>
     </body>
