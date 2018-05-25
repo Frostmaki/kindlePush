@@ -11,6 +11,12 @@
 |
 */
 
+
 Route::get('/', function () {
     return view('layouts.app');
 });
+
+Route::get('/login','UserController@showLoginForm');
+Route::post('/login','UserController@login')->name('login');
+Route::get('/register','UserController@showRegisterForm');
+Route::post('/register','UserController@register')->name('register');

@@ -1,4 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);/*
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);@charset "UTF-8";
+
+/*
 // Variables
 @import "variables";
 
@@ -97,7 +99,7 @@ footer .footer-container a {
   text-decoration: none;
 }
 
-/**/
+/*固定footer位置*/
 
 #app-container {
   height: 100%;
@@ -109,5 +111,16 @@ footer .footer-container a {
   display: block;
   width: 100%;
   bottom: 0;
+}
+
+/*login register form*/
+
+.LRForm table {
+  border: 3px dashed yellow;
+}
+
+.LRForm {
+  border: 3px solid black;
+  display: inline-block;
 }
 
