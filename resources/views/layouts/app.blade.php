@@ -10,8 +10,11 @@
 
         <div id="app-container">
             @include('layouts._header')
-            @include('layouts._message')
-            @yield('content')
+            <div id="app-main">
+                @include('layouts._message')
+                @yield('content')
+
+            </div>
 
         </div>
         <div id="app-footer">

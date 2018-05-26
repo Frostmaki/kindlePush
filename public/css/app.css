@@ -115,12 +115,3 @@ footer .footer-container a {
 
 /*login register form*/
 
-.LRForm table {
-  border: 3px dashed yellow;
-}
-
-.LRForm {
-  border: 3px solid black;
-  display: inline-block;
-}
-

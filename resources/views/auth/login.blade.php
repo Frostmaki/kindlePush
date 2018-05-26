@@ -7,6 +7,7 @@
 
             <tr><td><h3>Login</h3></td></tr>
 
+            @include('layouts._error')
             <tr>
                 <td>
                     Email:
@@ -25,7 +26,7 @@
                 </td>
             </tr>
 
-            <tr><td><input type="submit" value="submit"></button></td></tr>
+            <tr><td><input type="submit" value="submit"/></td></tr>
         </table>
         </form>
     </div>

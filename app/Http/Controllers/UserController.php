@@ -16,7 +16,7 @@ class UserController extends Controller
 
     public function login(Request $request){
         if(Auth::attempt(['email'=>$request->email,'password'=>$request->password])){
-            return view('/');
+            return view('home');
         }
         return 'false';
     }
@@ -30,12 +30,21 @@ class UserController extends Controller
 
 
     public function register(Request $request,User $user){
+        $request->validate([
+            'name'=>'required|min:4',
+            'email'=>'required|unique:users|email',
+            'password'=>'required|min:6|confirmed'
+        ]);
+        /*
         $user=DB::table('users')->insert([
          ['name'=>$request->name],
          ['email'=>$request->email],
          ['password'=>bcrypt($request->password)],
         ]);
+        */
+        DB::insert(
+           'insert into users (name,email,password) values (?,?,?)',[$request->name,$request->email,bcrypt($request->password)]);
         session()->flash('success','操作成功!');
-        return view('/');
+        return view('home');
     }
 }
